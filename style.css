@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  background: #ffffff;
+  font-size: 24px;
+  color: #292830;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.links {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background: white;
+  padding: 25px;
+  transition: 1s ease background;
+}
+
+.links a {
+  color: black;
+  transition: 1s ease color;
+}
+
+.link_dark {
+  background: black;
+  transition: 1s ease background;
+}
+
+.link_dark a {
+  color: white;
+  transition: 1s ease color;
+}
+
+.scroll {
+  /* scroll-snap-type: y mandatory; */
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.scroll-item {
+  height: 101vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 34px;
+  scroll-snap-align: start;
+}
+
+.scroll-item1 {
+  background: tomato;
+}
+.scroll-item2 {
+  background: lightblue;
+}
+.scroll-item3 {
+  background: #292830;
+}
+.scroll-item4 {
+  background: tomato;
+}
+.scroll-item5 {
+  background: lightblue;
+}
